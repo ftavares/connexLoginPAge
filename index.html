@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Connex | Log in
+    </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="row title">
+            <img src="./images/conneX.JPG">
+        </div>
+
+        <div class="row ">
+            <img class="horizontalLine" src="./images/topline.JPG">
+        </div>
+
+        <div class="row ">
+            <div class="cell">
+                <img class="horizontalLine" src="./images/threeimages.JPG">
+            </div>
+            <div class="cell">
+
+                <div class="form">
+                    <div class="form_title">Enter your Credentials</div>
+                    <div class="form_group">
+                        <div class="form_label">Username (Email Address)</div>
+                        <input class="form_input" type="text">
+                    </div>
+                    <div class="form_group">
+                        <div class="form_label">Password</div>
+                        <input class="form_input" type="password">
+                        <div class="form_link">
+                            <a href=#>I have forgotten my password</a>
+                        </div>
+                    </div>
+                    <div class="form_buttom">
+                        Login
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row ">
+            <img class="horizontalLine" src="./images/bottomline.JPG">
+        </div>
+
+    </div>
+
+
+    <div class="popup" id="mainPopUp">
+        <div class="popup_modal"></div>
+        <div class="popup_wrapper">
+            <div class="popup_title">Test Successful</div>
+            <div class="popup_content">
+                <p>You system is correctly configured.</p>
+                <p>You can now close this browser.</p>
+            </div>
+
+            <div class="popup_ok" onclick="hidePopUp()">OK</div>
+        </div>
+    </div>
+
+
+    <script>
+        function hidePopUp() {
+            setPopUp('none')
+        }
+
+        function setPopUp(display) {
+            var popUp = document.getElementById('mainPopUp');
+            popUp.style.display = display;
+
+        }
+
+        setPopUp('flex');
+
+    </script>
+
+</body>
+
+</html>
